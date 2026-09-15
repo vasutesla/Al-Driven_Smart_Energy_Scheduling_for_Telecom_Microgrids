@@ -50,6 +50,23 @@ Historical Energy Data
         Streamlit Dashboard
 ```
 
+## 📊 Dataset & Data Preparation
+
+The project uses the **LD2011_2014 electricity consumption dataset**, which contains power consumption data from multiple clients over a four-year period.
+
+Since the original dataset contains electricity usage patterns from different types of consumers, the client profiles were analyzed to identify a consumption pattern that closely resembles the typical power requirements of a **telecom tower**. The selected client's power consumption data was then extracted and processed to create the dataset used for the telecom microgrid simulation.
+
+The selected power consumption profile was further processed into an hourly time-series dataset and used as the basis for:
+
+* Energy demand forecasting using LSTM
+* Grid outage simulation and prediction
+* Battery scheduling
+* Diesel generator usage analysis
+* Energy cost comparison
+
+This approach allows the project to experiment with telecom microgrid energy management using a real-world electricity consumption dataset while adapting the consumption profile to represent a telecom tower environment.
+
+
 ## 🤖 Machine Learning Models
 
 ### 1. LSTM Energy Demand Forecasting
